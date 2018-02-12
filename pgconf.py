@@ -12,8 +12,8 @@ from argparse import ArgumentParser
 
 PARSER = ArgumentParser()
 PARSER.add_argument(
+    '-m',
     '--memory',
-    metavar='-m',
     type=str,
     help=(
         'Operating memory. '
@@ -23,29 +23,29 @@ PARSER.add_argument(
     default='1GB'
 )
 PARSER.add_argument(
+    '-p',
     '--cpus',
-    metavar='-p',
     type=int,
     help='CPU count.',
     default=2
 )
 PARSER.add_argument(
+    '-c',
     '--connections',
-    metavar='-c',
     type=int,
     help='Maximum connections that database server aimed to support.',
     default=100
 )
 PARSER.add_argument(
+    '-d',
     '--databases',
-    metavar='-d',
     type=int,
     help='Database count.',
     default='1'
 )
 PARSER.add_argument(
+    '-v',
     '--version',
-    metavar='-v',
     type=str,
     help='PostgreSQL version to generate configuration for (default: 9.1).',
     default='9.1'
